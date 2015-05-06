@@ -1,6 +1,8 @@
 
 // needs work.
 
+document.body.innerHTML += '<style>*:focus { outline: 4px solid blue; }</style>';
+
 function nav(el, dir) {
   var targets = document.querySelectorAll('a[href], area[href], input:enabled, select:enabled, textarea:enabled, button:enabled, iframe, object, embed, *[tabindex], *[contenteditable]');
   targets = Array.prototype.slice.call(targets,0);
